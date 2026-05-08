@@ -197,7 +197,7 @@ function renderFeaturedArticle(article) {
     if (!container) return;
 
     container.innerHTML = `
-        <a href="/article/${article.id}.html" class="featured-link">
+        <a href="/article-${article.id}.html" class="featured-link">
             <img src="${escapeHtml(article.image)}" 
                  alt="${escapeHtml(article.title)}" 
                  class="featured-image"
@@ -210,7 +210,7 @@ function renderFeaturedArticle(article) {
                 <span class="read-time">⏱️ ${escapeHtml(article.readTime)}阅读</span>
             </div>
             <h2 class="featured-title">
-                <a href="/article/${article.id}.html">${escapeHtml(article.title)}</a>
+                <a href="/article-${article.id}.html">${escapeHtml(article.title)}</a>
             </h2>
             <p class="featured-excerpt">${escapeHtml(article.excerpt)}</p>
             <div class="featured-footer">
@@ -233,7 +233,7 @@ function renderFeaturedArticle(article) {
 function renderNewsCard(article) {
     return `
         <article class="news-card">
-            <a href="/article/${article.id}.html" class="news-card-image-link">
+            <a href="/article-${article.id}.html" class="news-card-image-link">
                 <img src="${escapeHtml(article.image)}" 
                      alt="${escapeHtml(article.title)}" 
                      class="news-card-image"
@@ -246,7 +246,7 @@ function renderNewsCard(article) {
                     <span class="read-time">${escapeHtml(article.readTime)}</span>
                 </div>
                 <h3 class="news-card-title">
-                    <a href="/article/${article.id}.html">${escapeHtml(article.title)}</a>
+                    <a href="/article-${article.id}.html">${escapeHtml(article.title)}</a>
                 </h3>
                 <p class="news-card-excerpt">${escapeHtml(article.excerpt)}</p>
                 <div class="news-card-footer">
