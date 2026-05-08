@@ -1,0 +1,11 @@
+{
+  "name": "ai-daily-news",
+  "version": "1.0.0",
+  "description": "AI每日资讯 - Google AdSense优化网站",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve ."
+  },
+  "keywords": ["AI", "news", "AdSense"],
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# AI每日资讯 - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
